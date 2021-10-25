@@ -66,10 +66,11 @@ var loadSongs = function(){
 
   client.sendRequest("GET", "songs", "", "", {}, false,
   function(data, type) {
-    var arr = data.songs;  
+    var arr = data.songs;   
+    var text = "";
     arr.forEach(function(item) {
-    var text = 
-  });
+        
+    });
     console.log(data);
   },
   function(error) {
