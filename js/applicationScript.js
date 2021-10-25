@@ -66,7 +66,19 @@ var loadSongs = function(){
 
   client.sendRequest("GET", "songs", "", "", {}, false,
   function(data, type) {
-     document.getElementById("p").innerText = data.map(song => song.title);
+     arr.forEach(function(item) {
+    li = document.createElement('li');
+    li.appendChild(document.createTextNode(item.-{$Display_Attr$}-));
+    if($Event_Check$) {
+      a = document.createElement('a');
+      a.appendChild(document.createTextNode($(li).text()));
+      a.href = "#";
+      a.addEventListener("$Event_Type$",
+        function() { getData(item.$Param_Input$ , false); });
+      $(li).html(a);
+    }
+    ul.appendChild(li); // append the list item to the ul
+  });
     console.log(data);
   },
   function(error) {
