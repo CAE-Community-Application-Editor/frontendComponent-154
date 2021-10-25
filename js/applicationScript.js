@@ -70,7 +70,8 @@ var loadSongs = function(){
     var text = "";
     arr.forEach(function(item) {
         text += item.title + ", "
-    });
+    }); 
+    
     console.log(data);
   },
   function(error) {
