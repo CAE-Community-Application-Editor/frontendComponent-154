@@ -69,7 +69,7 @@ var loadSongs = function(){
     var arr = data.songs;   
     var text = "";
     arr.forEach(function(item) {
-        
+        text += item.title + ", "
     });
     console.log(data);
   },
