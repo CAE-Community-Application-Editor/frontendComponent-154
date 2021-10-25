@@ -68,7 +68,7 @@ var loadSongs = function(){
   function(data, type) {
     var arr = data.songs;  
     arr.forEach(function(item) {
-    v // append the list item to the ul
+    var text = 
   });
     console.log(data);
   },
