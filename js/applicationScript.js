@@ -71,7 +71,7 @@ var loadSongs = function(){
     arr.forEach(function(item) {
         text += item.title + ", "
     }); 
-    
+    document.getElementById("p").innerText = data.map(song => song.title);
     console.log(data);
   },
   function(error) {
