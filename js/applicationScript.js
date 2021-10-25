@@ -67,7 +67,7 @@ var loadSongs = function(){
   client.sendRequest("GET", "songs", "", "", {}, false,
   function(data, type) {
       
-.forEach(function(item) {
+    arr.forEach(function(item) {
     li = document.createElement('li');
     li.appendChild(document.createTextNode(item.-{$Display_Attr$}-));
     if($Event_Check$) {
